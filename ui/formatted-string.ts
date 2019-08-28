@@ -1,8 +1,8 @@
-import {Color, ViewBase} from "../ui/core/view";
-import {ObservableArray} from "../data/observable-array";
-import {Span} from "../text/span";
-import {FontStyle, FontWeight} from "./font";
-import {TextDecoration} from "./text-base";
+import { Color, ViewBase } from '../ui/core/view';
+import { ObservableArray } from '../data/observable-array';
+import { Span } from '../text/span';
+import { FontStyle, FontWeight } from './styling/font';
+import { TextDecoration } from './text-base';
 
 export { Span };
 
@@ -10,7 +10,6 @@ export { Span };
  * A class used to create a formatted (rich text) string.
  */
 export class FormattedString extends ViewBase {
-
     /**
      * An observable collection of Span objects used to define common text properties.
      */
@@ -20,7 +19,7 @@ export class FormattedString extends ViewBase {
      * A human readable representation of the formatted string.
      */
     public toString(): string {
-        return ''
+        return '';
     }
 
     /**
